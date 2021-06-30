@@ -1,0 +1,350 @@
+html {
+  font-family: 'Roboto', sans-serif;
+}
+/* Utils */
+.btn {
+  margin-top: 10px;
+  background-color: #fbb218;
+  color: #fff;
+}
+
+.pulse {
+  border: 1px solid #fff;
+  border-radius: 5px;
+  height: 50px;
+  padding-top: 10px;
+  text-align: center;
+  transition: 1s;
+  width: 150px;
+}
+
+.pulse:hover {
+  animation: pulse 1.8s infinite;
+  transition: 1s ease;
+  color: #fff;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(251, 178, 24, .6);
+  }
+  50% {
+    box-shadow: 0 0 0 10px rgba(251, 178, 24, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(251, 178, 24, 0);
+  }
+}
+
+.heading {
+  margin-bottom: 50px;
+}
+
+.heading h1 {
+  font-size: 3rem;
+  color: #37251b;
+}
+
+.subheading {
+  color: #80411e;
+  margin-bottom: 50px;
+}
+
+.subheading h2 {
+  font-size: 2.5rem;
+}
+
+.text {
+  font-size: 1.1rem;
+}
+
+.navbar-brand img {
+  width: 150px;
+  margin-left: 30px;
+}
+
+/* Pocetna */
+.v-header {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+.wrapper {
+  max-width: 960px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin: auto;
+  text-align: center;
+}
+
+.fullscreen-video-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.fullscreen-video-wrap video {
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.header-overlay {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #e4bc84;
+  z-index: 1;
+  opacity: 0.85;
+}
+
+.header-content {
+  z-index: 2;
+}
+
+.header-content h1 {
+  font-size: 50px;
+  margin-bottom: 50px;
+  font-weight: bold;
+}
+
+.header-content p {
+  font-size: 1.5rem;
+  display: block;
+  padding-bottom: 2rem;
+}
+
+/* Proizvodi */
+#proizvodi {
+  margin-top: 50px;
+}
+
+/* Najam Aparata */
+#najam-aparata {
+  margin-top: 100px;
+}
+
+#najam-aparata img {
+  height: 200px;
+  width: 200px;
+  margin: 0 auto;
+}
+
+#najam-aparata .card .cijena {
+  font-size: 1.5rem;
+}
+
+/* Koristenje */
+#koristenje {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 100px 50px 0 50px;
+}
+
+#koristenje .upozorenje {
+  color: #fff;
+  border-radius: 20px;
+  width: 50%;
+}
+
+#koristenje .upozorenje .subheading {
+  color: #fff;
+}
+
+#koristenje .upozorenje a {
+  text-decoration: none;
+  color: #000;
+}
+
+#koristenje video {
+  width: 560px;
+  height: 315px;
+  display: block;
+  margin-bottom: 30px;
+}
+
+/* Eko Promocija */
+#eko-promocija {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 100px 50px 0 50px;
+}
+
+#eko-promocija img {
+  width: 50%;
+  margin: 30px 0;
+}
+
+/* Kontakt */
+#kontakt-jumbotron {
+  width: 100%;
+  height: 80vh;
+  background-color: #e4bc84;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 100px 150px 0 150px;
+}
+
+#kontakt-jumbotron .text .table-wrapper {
+  width: 40%;
+  margin: 50px auto;
+}
+
+#kontakt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 100px 0;
+  padding: 0 100px;
+}
+
+#kontakt .map {
+  width: 50%;
+}
+
+#kontakt .map iframe{
+  width: 90%;
+  height: 500px;
+}
+
+#kontakt .forma {
+  width: 50%;
+}
+
+#kontakt .forma .form-row {
+  margin-bottom: 10px;
+}
+
+#kontakt .forma .form-row  label{
+  margin-bottom: 5px;
+}
+
+/* Footer */
+#footer {
+  background-color: #e4bc84;
+  height: 100%;
+  padding: 10px 0;
+}
+
+@media(max-width:960px) {
+  .heading h1 {
+    font-size: 2.2rem;
+  }
+  .subheading h2 {
+    font-size: 1.7rem;
+  }
+  .heading {
+    margin-bottom: 20px;
+  }
+  .subheading {
+    margin-bottom: 20px;
+  }
+  .wrapper {
+    padding: 0 3rem;
+  }
+  .fullscreen-video-wrap {
+    height: 100vh;
+  }
+  .header-overlay {
+    height: 100vh;
+  }
+  #najam-aparata {
+    margin-top: 50px 0 20px 0;
+  }
+  #koristenje {
+    padding: 0;
+    margin-top: 50px;
+  }
+  #koristenje .upozorenje {
+    width: 90%;
+  }
+  #koristenje iframe {
+    width: 100%;
+  }
+  #koristenje video {
+    width: 100%;
+  }
+  #eko-promocija {
+    padding: 40px 20px 0 20px;
+  }
+  #eko-promocija img {
+    width: 100%;
+    margin: 30px 0;
+  }
+  #kontakt-jumbotron {
+    height: 100%;
+    margin-top: 0;
+    padding: 30px 20px;
+  }
+  #kontakt-jumbotron .heading {
+    padding-top: 0;
+  }
+  #kontakt-jumbotron .text .table-wrapper {
+    width: 100%;
+    margin: 20px auto;
+  }
+
+  #kontakt {
+    margin: 30px 0 0 0;
+    padding: 0;
+  }
+  #kontakt .map {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+  #kontakt .map iframe{
+    width: 100%;
+    height: 250px;
+  }
+  #kontakt .forma {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+}
+
+@media(max-width:640px) {
+  #koristenje iframe {
+    width: 100%;
+  }
+  #koristenje video {
+    width: 100%;
+  }
+  .wrapper {
+     padding: 0 3rem;
+  }
+  .v-header {
+    height: 100%;
+  }
+  .fullscreen-video-wrap {
+    height: 160%;
+  }
+  .header-overlay {
+    height: 160%;
+  }
+  .header-content h1 {
+    margin: 20px 0;
+  }
+  .header-content p {
+    font-size: 1.2rem;
+    padding-bottom: 1rem;
+  }
+
+
+}
